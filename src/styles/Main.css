@@ -59,7 +59,8 @@ p>span {
 
 @media (max-width: 600px) {
     .today-weather {
-        background: none;
+        width: 100%;
+        border-radius: 0;
     }
     .days-weather {
         grid-template-columns: 1fr; /* 1 колонка */

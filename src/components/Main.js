@@ -34,13 +34,13 @@ export default function Main() {
                                 daysArray.push(el);
                             }
                         })
-                        console.log(daysArray)
                         const daysWeather =
                             <div className="days-weather">
                                 {daysArray.map((el, i) =>
                                     <Card
                                         bg="light"
                                         className="weather-card"
+                                        key={el.dt}
                                     >
                                         <Card.Header className={"card-header"}>{(() => {
                                             const dateTime = el.dt_txt.split(" ");
