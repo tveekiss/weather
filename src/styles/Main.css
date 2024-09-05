@@ -1,3 +1,67 @@
 .main {
     font-family: 'Roboto Bold', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h3 {
+    margin-top: 20px;
+}
+
+.today-weather {
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px 40px;
+    background: #cecbcb;
+}
+
+.days-weather {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns:repeat(5,300px);
+    gap: 20px;
+}
+
+.card-title.h5 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+
+p>span {
+    display: inline-block;
+}
+
+@media (max-width: 1600px) {
+    .days-weather {
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    }
+}
+
+@media (max-width: 1200px) {
+    .days-weather {
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    }
+}
+
+@media (max-width: 900px) {
+    .days-weather {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    }
+}
+
+@media (max-width: 600px) {
+    .today-weather {
+        background: none;
+    }
+    .days-weather {
+        grid-template-columns: 1fr; /* 1 колонка */
+    }
 }

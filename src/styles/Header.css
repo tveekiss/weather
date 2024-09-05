@@ -1,7 +1,9 @@
 .header {
     height: 20%;
+    width: 100%;
     background: #afaeae;
     display: flex;
+    align-items: center;
     font-family: 'Roboto Black', sans-serif;
 }
 
