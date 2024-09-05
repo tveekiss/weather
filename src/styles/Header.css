@@ -1,0 +1,11 @@
+.header {
+    height: 20%;
+    background: #afaeae;
+    display: flex;
+    font-family: 'Roboto Black', sans-serif;
+}
+
+.header img {
+    margin-left: 40px;
+    margin-right: 20px;
+}
